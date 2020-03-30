@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 40%;
+  height: 680px;
+  
+  perspective: 1000px;
+  margin-left: 180px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+  border: 1px solid red;
+  width:70%;
+  margin-top: 20px;
+  height: 600px;
+  box-shadow: 5px 5px white;
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+}
+
+.flip-box-front {
+  color: black;
+}
+
+.flip-box-back {
+  color: white;
+  transform: rotateY(180deg);
+}
+.flip-box1 {
+  background-color: transparent;
+  width: 40%;
+  height: 680px;
+  perspective: 1000px;
+  margin-left: 50%;
+  margin-top: -680px;
+}
+
+.flip-box-inner1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box1:hover .flip-box-inner1 {
+  transform: rotateY(180deg);
+  border: 1px solid red;
+  width:70%;
+  margin-top: 20px;
+  height: 600px;
+  box-shadow: 5px 5px white;
+}
+
+
+.flip-box-front1, .flip-box-back1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front1 {
+  color: black;
+}
+
+.flip-box-back1 {
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+</head>
+<body style="background-color: white">
+  <header style="text-align: center; font-size: 25px; font-weight: bold; font-family: serif; background-color: orange;color: white;">Fruits</header>
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front"><br><br><br>
+      <img src="apple.jpg" alt="Paris" style="width:70%;height:500px">
+    </div>
+    <div class="flip-box-back">
+      <br>
+      <h2 style="color:white;font-family: serif; ">Apple</h2> <br><br>
+      <p style="color:red; text-shadow: 1px 1px white;font-family: Comic Sans MS; font-size: 25px;">The crabapple is the only apple native to North America.
+Apples come in all shades of reds, greens, and yellows.
+Two pounds of apples make one 9-inch pie.
+Apple blossom is the state flower of Michigan.</p>
+    </div>
+  </div>
+</div>
+<div class="flip-box1">
+  <div class="flip-box-inner1">
+    <div class="flip-box-front1"><br><br><br>
+      <img src="banana.jpg" alt="Paris" style="width:70%;height:500px">
+    </div>
+    <div class="flip-box-back1">
+       <br>
+      <h2 style="color:white;font-family: Comic Sans MS; ">Banana</h2><br><br>
+      <p style="color:yellow; text-shadow: 1px 1px white;font-family: Comic Sans MS; font-size: 25px;">Bananas float in water because they are less dense in comparison. Bananas are one of the most popular fruits in the American diet. Bananas grow on plants that are officially considered an herb. The banana is actually classified as a berry.  </p>
+    </div>
+  </div>
+</div>
+<footer style="text-align: center; height:30px;background-color: orange;color:white;margin-top: -40px;font-size: 15px; font-family: Comic Sans MS; ">
+  <marquee>Created By :Soham Upadeo</marquee>
+</footer>
+</body>
+</html>
